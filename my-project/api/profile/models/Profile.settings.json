@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "profiles",
+  "info": {
+    "name": "profile",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "user": {
+      "model": "user",
+      "via": "profile",
+      "plugin": "users-permissions"
+    },
+    "status": {
+      "enum": [
+        "single",
+        "married"
+      ],
+      "type": "enumeration"
+    }
+  }
+}

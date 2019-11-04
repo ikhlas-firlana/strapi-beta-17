@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "car",
+    "description": "tools for transportation"
+  },
+  "connection": "default",
+  "collectionName": "groups_cars",
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "profile": {
+      "model": "profile"
+    }
+  }
+}
